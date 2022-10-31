@@ -5,11 +5,11 @@
   }
   .sidebar.open {
     margin-left: 0;
-	transition: 0.5s;
+	transition: width 0.5s;
   }
   .sidebar.close {
     margin-left: -280px;
-	transition: 0.5s;
+	transition: width 0.5s;
   }
   .app.dark .sidebar{
     background-color: var(--bgcolor);
@@ -23,10 +23,8 @@
     position: fixed;
     height: 100%;
     width: 15rem;
+	transition:0.5s;
   }
-  
- 
-  
   .logo{
     color: var(--red);
     display: flex;

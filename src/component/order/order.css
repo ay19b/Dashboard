@@ -1,16 +1,28 @@
-.users{
-    margin: 28px auto auto auto;
-    width: 95%;
-    border-radius: 6px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
+
 .app .users{
     background-color: var(--bgcolor2);
 }
 .app.dark .users{
     background-color: var(--bgcolor);
+}
+
+.MuiPaper-root{
+    margin: 28px auto auto auto!important;
+    width: 90%!important;
+    border-radius: 6px!important;
+    display: flex!important;
+    justify-content: space-evenly!important;
+    flex-direction: column!important;
+	background-color: var(--bgcolor)!important;
+}
+
+.app .MuiPaper-root{
+    background-color: var(--bgcolor2)!important;
+	border:1px solid #ccc !important;
+}
+.app.dark .MuiPaper-root{
+    background-color: var(--bgcolor)!important;
+	border:1px solid black !important;
 }
 .title{
     width: 90%;
@@ -44,4 +56,23 @@
     border-radius: 50%;
     display: inline-table;
     margin-right: 8%
+}
+
+
+
+.app .MuiTableCell-root,
+.app .MuiTableCell-root{
+  color:rgb(0, 0, 0) !important;
+  border-bottom: 1px solid #ccc !important;
+  font-size: 1rem !important;
+}
+.app.dark .MuiTableCell-root,
+.app.dark .MuiTableCell-root{
+  color:white !important;
+  border-bottom: 1px solid rgb(0, 0, 0) !important;
+  font-size: 1rem !important;
+}
+
+.MuiPaper-root tr {
+	 color:rgb(0, 0, 0) !important;
 }

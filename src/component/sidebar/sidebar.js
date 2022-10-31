@@ -47,10 +47,9 @@ export default function Sidebar() {
           secondary={
             <>
               <Typography
-                sx={{ display: 'inline' }}
+                sx={{ display: 'inline',color:'var(--text)' }}
                 component="span"
                 variant="body2"
-                color="text.primary"
               >
                 Admin
               </Typography>

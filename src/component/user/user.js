@@ -10,13 +10,15 @@ import './user.css'
 import Data from './data'
 import Avatar from '@mui/material/Avatar';
 import admin from '../../images/admin.webp'
+import { makeStyles} from '@mui/styles'
 
 
 export default function User() {
+
   return (
   <div className='users'>
     <h3 className='title'>Users</h3>
-    <TableContainer component={Paper} className='userList'>
+    <TableContainer component={Paper} className='users'>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>

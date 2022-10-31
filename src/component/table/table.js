@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
 import './table.css'
+import useStyles from './style'
 import Button from '@mui/material/Button';
 import { DarkModeContext } from "../../context/darkModeContext";
 import {MenuContext} from '../../context/menuContext'
@@ -20,6 +21,7 @@ const rows = [
 ];
 
 export default function DataTable() {
+  const classes = useStyles();
 	const { menu } = useContext(MenuContext);
 	const matches = useMediaQuery('(max-width:600px)');
 	
@@ -56,6 +58,7 @@ export default function DataTable() {
         <h4 className='headBtn'>Show All</h4>
       </div>
       <DataGrid
+        className={classes.root}
         rows={rows}
         columns={columns}
         pageSize={5}

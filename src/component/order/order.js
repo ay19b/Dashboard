@@ -15,7 +15,7 @@ export default function Order() {
   return (
   <div className='users'>
     <h3 className='title'>Orders</h3>
-    <TableContainer component={Paper} className='userList'>
+    <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
