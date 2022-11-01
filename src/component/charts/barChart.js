@@ -78,8 +78,8 @@ export default function ChartBar() {
       <XAxis dataKey="name" />
       <YAxis />
       <Tooltip />
-      <Bar dataKey="pv" fill="red" />
-      <Bar dataKey="uv" fill="#eb1616" />
+      <Bar dataKey="pv" fill="var(--red)" />
+      <Bar dataKey="uv" fill="var(--red)" />
     </BarChart>
     </div>
   )

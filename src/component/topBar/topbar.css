@@ -152,6 +152,10 @@
 }
 
 @media only screen and (max-width:450px) {
+   
+   .rightBar {
+    justify-content: flex-end;
+   }
   .topbarListItem {
     font-size: 1.2rem;
     margin-left: -6%;
@@ -159,6 +163,9 @@
    .logo svg {
      font-size: 2rem;
    }
+   .iconMenu {
+      margin: 0%;
+    }
    .css-1wlk0hk-MuiAvatar-root{
 	   width: 32px !important;
        height: 32px !important;

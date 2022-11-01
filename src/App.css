@@ -7,7 +7,6 @@
   --blue:#009CFF;
 }
 
-
 .App {
   text-align: center;
 }
@@ -62,21 +61,21 @@
 	border: 1px solid !important;
 }
 .app .MuiDataGrid-root{
-	border: 1px solid var(--text) !important;
+	border: 1px solid #c2c7dd !important;
 }
 
 .app.dark .MuiDataGrid-columnHeaders{
 	border-bottom: 1px solid rgb(0, 0, 0)!important ;
 }
 .app .MuiDataGrid-columnHeaders{
-	border-bottom: 1px solid var(--text)!important ;
+	border-bottom: 1px solid #c2c7dd!important ;
 }
 
 .app.dark .MuiDataGrid-cell {
   border-bottom: 1px solid rgb(32, 30, 30) !important;
 }
 .app .MuiDataGrid-cell {
-  border-bottom: 0.7px solid var(--text) !important;
+  border-bottom: 0.7px solid #c2c7dd !important;
 }
 
 .MuiDataGrid-columnSeparator--sideRight{

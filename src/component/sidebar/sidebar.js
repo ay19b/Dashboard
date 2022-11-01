@@ -61,17 +61,17 @@ export default function Sidebar() {
           
           <ul className="sidebarList">
           <Link to="/" style={{ textDecoration: "none" }}> 
-            <li className={splitLocation[1] === "" ? "sidebarListItem active" : "sidebarListItem"} onClick={matches?!menu?() => dispatch({ type: "TOGGLE" }):null:!menu?null:null}>
+            <li className={splitLocation[1] === "" ? "sidebarListItem active" : "sidebarListItem"} onClick={matches?() => dispatch({ type: "TOGGLE" }):null}>
               <FaHome /> Dashboard
             </li>
           </Link> 
           <Link to="/order" style={{ textDecoration: "none" }} >
-             <li className={splitLocation[1] === "order" ? "sidebarListItem active" : "sidebarListItem"} onClick={matches?!menu?() => dispatch({ type: "TOGGLE" }):null:!menu?null:null}>
+             <li className={splitLocation[1] === "order" ? "sidebarListItem active" : "sidebarListItem"} onClick={matches?() => dispatch({ type: "TOGGLE" }):null}>
                 <RiLuggageCartFill/>Orders
               </li>
           </Link>
           <Link to="/users" style={{ textDecoration: "none" }}>
-              <li className={splitLocation[1] === "users" ? "sidebarListItem active" : "sidebarListItem"} onClick={matches?!menu?() => dispatch({ type: "TOGGLE" }):null:!menu?null:null}>
+              <li className={splitLocation[1] === "users" ? "sidebarListItem active" : "sidebarListItem"} onClick={matches?() => dispatch({ type: "TOGGLE" }):null}>
                 <FaUser/>Users
               </li>
           </Link>
@@ -79,14 +79,14 @@ export default function Sidebar() {
               <FaShoppingBag/> Products
             </li>
             <li className="sidebarListItem">
-              <BsCartPlusFill/>add product
-            </li>
-            <li className="sidebarListItem">
                <TfiMenuAlt/>Category
               </li>
               
             <li className="sidebarListItem">
               <BsShop/>Salles
+            </li>
+			<li className="sidebarListItem">
+              <BsCartPlusFill/>Pages
             </li>
           </ul>
         </div>

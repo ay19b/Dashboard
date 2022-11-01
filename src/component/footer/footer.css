@@ -31,4 +31,8 @@
 	.logo svg {
       font-size: 3rem;
     }
+	.contFooter{
+		flex-direction: column;
+		text-align: center;
+	}
 }
