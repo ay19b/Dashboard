@@ -7,8 +7,7 @@ import Orders from './page/order/order';
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import Loading from "./component/loading/loading";
-import { theme } from './theme';
-import { ThemeProvider } from '@mui/material/styles';
+
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -27,8 +26,7 @@ function App() {
      {!isLoading ?(
 	   <Loading />
 	 ):(
-    <ThemeProvider theme={theme}>
-	    <div className={darkMode ? "app" : "app dark"}>
+    <div className={darkMode ? "app" : "app dark"}>
       <BrowserRouter>
         <Routes>
           <Route path="/">
@@ -43,7 +41,6 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
-    </ThemeProvider>
 	 ) 
 	 }
 	 </>

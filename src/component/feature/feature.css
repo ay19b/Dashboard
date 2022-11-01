@@ -24,6 +24,7 @@
 }
 .card .cardInf{
     font-size: 1.3rem;
+	text-align: end;
 }
 .app.dark .card .cardInf{
     color: rgb(255, 255, 255);
@@ -59,4 +60,5 @@
       width: 90%;
       flex: 0 0 auto;
     }
+
 }

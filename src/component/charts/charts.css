@@ -2,6 +2,7 @@
     width: 46%;
     border-radius: 8px;
     margin-top: 28px;
+	overflow: hidden;
 }
 .app .chart{
     background-color: var(--bgcolor2);
