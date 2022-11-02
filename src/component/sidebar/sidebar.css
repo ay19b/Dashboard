@@ -146,6 +146,9 @@
      position: absolute;
      z-index: 1;
    }
+   .sidebar.open {
+     margin-left: -1%;
+   }
    .app.dark .sidebarWrapper{
     background-color: var(--bgcolor);
   }
@@ -157,5 +160,24 @@
 @media only screen and (max-width:850px){
    .logo svg {
     font-size: 2.5rem;
+   }
+   .sidebar.open {
+    margin-left: -2%;
+   }
+}
+@media only screen and (max-width: 700px) {
+  .sidebar.open {
+    margin-left: -3%;
+  }
+}
+@media only screen and (max-width:550px) {
+   .sidebar.open {
+     margin-left: -4%;
+   }
+}
+
+@media only screen and (max-width:450px) {
+   .sidebar.open {
+     margin-left: -6%;
    }
 }
