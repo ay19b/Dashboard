@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div className='home' >
       <Sidebar />
-      <div className={!menu ? 'content close' : "content open"}>
+      <div className={menu ? 'content openSidebar' : "content closeSidebar"}>
        <Topbar />
        <Feature />
        <div className='charts'> 
