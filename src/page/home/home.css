@@ -4,13 +4,13 @@
 .content{
     display: flex;
     flex-direction: column;
-	transition: 0.5s;
-	width: 80vw;
+    transition: 0.3s;
+    width: 80vw;
 }
-.content.open{
+.content.closeSidebar{
   width: 100vw;
 }
-.content.close{
+.content.openSidebar{
   width: 80vw;
 }
 .contentHidden{
@@ -33,7 +33,7 @@
   }
   
 @media only screen and (min-width: 1600px) {
-  .content.close{
+  .content.openSidebar{
 	width: 100%;
   }
 }
@@ -47,7 +47,7 @@
   }
 }
   @media only screen and (max-width: 1000px) {
-  .content.close {
+  .content.openSidebar {
     width: 100vw;
   }
 }
