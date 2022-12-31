@@ -1,15 +1,15 @@
 .sidebar {
     position: sticky;
     width: 20vw;
-	margin-left: 0;
+    margin-left: 0;
   }
   .sidebar.open {
     margin-left: 0;
-	transition: margin-left 0.5s;
+    transition: margin-left 0.1s;
   }
   .sidebar.close {
     margin-left: -280px;
-	transition: margin-left 0.5s;
+    transition: margin-left 0.5s;
   }
   .app.dark .sidebar{
     background-color: var(--bgcolor);
@@ -62,17 +62,17 @@
     border-radius: 10px;
     font-size: 1.1rem;
     color: var(--text);
-	border-radius: 0px 30px 30px 0px;
+    border-radius: 0px 30px 30px 0px;
     border-style: solid;
     border-width: 0px 0px 0px 3px;
-	border-color: transparent;
-	font-weight: 600;
+    border-color: transparent;
+    font-weight: 600;
   }
   .app .sidebarListItem {
-	  color: var(--darkText);
+    color: var(--darkText);
   }
   .app.dark .sidebarListItem {
-	  color: var(--text);
+    color: var(--text);
   }
   
   .sidebarListItem.active,
@@ -81,7 +81,7 @@
     border-radius: 0px 30px 30px 0px;
     border-style: solid;
     border-width: 0px 0px 0px 3px;
-	border-color:  var(--red);
+    border-color:  var(--red);
   }
   .app .sidebarListItem.active,
   .sidebarListItem:hover {
@@ -92,7 +92,7 @@
   .app.dark .sidebarListItem.active,
   .app.dark .sidebarListItem:hover {
     background-color:black !important;
-	color:  var(--red);
+    color:  var(--red);
   }
   
   .sidebarListItem svg{
@@ -104,7 +104,7 @@
     background-color: rgb(255, 255, 255);
    }
    .app.dark .sidebarListItem svg{
-      background-color: black;
+    background-color: black;
    }
   .active svg{
     background-color: rgb(44, 43, 43);
