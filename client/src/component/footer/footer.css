@@ -1,0 +1,38 @@
+.footer{
+    margin: 28px auto auto auto;
+    width: 95%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.app .footer{
+    background-color: var(--bgcolor2);
+}
+.app.dark .footer{
+    background-color: var(--bgcolor);
+}
+.contFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 15px;
+}
+.contFooter h4{
+    color: var(--text);
+}
+.contFooter h4 span{
+    color: var(--red);
+}
+
+
+@media only screen and (max-width: 400px) {
+	.logo svg {
+      font-size: 3rem;
+    }
+	.contFooter{
+		flex-direction: column;
+		text-align: center;
+	}
+}

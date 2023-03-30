@@ -1,0 +1,49 @@
+.table{
+    height: 382px;
+    width: 95%;
+    background-color:var(--bgcolor);
+    margin: 28px auto auto auto;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.app .table{
+    background-color: var(--bgcolor2);
+}
+.app.dark .table{
+    background-color: var(--bgcolor);
+}
+.headTable{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 92%;
+    margin: auto;
+}
+.app .headText{
+    color: black;
+}
+.app.dark .headText{
+    color: white;
+}
+.headBtn{
+    color: var(--red);
+    cursor: pointer;
+}
+.headBtn:hover{
+    color: rgb(223, 27, 27);
+}
+.btn{
+    background-color: var(--red);
+}
+.btnDetail{
+    background-color: var(--red);
+	width: 3rem;
+    padding: 4px;
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+	cursor:pointer;
+}

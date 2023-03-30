@@ -1,0 +1,56 @@
+.home{
+    display: flex;
+    min-height: 100vh;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+	  transition: 0.5s;
+	  width: 80vw;
+}
+.content.open{
+  width: 100vw;
+  transition: width 0.4s;
+}
+.content.close{
+  width: 80vw;
+  transition: width 0.8s;
+}
+.contentHidden{
+	animation-name: close;
+}
+.charts{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+@keyframes open {
+    from {width: 100vw;}
+    to {width: 80vw;}
+  }
+  @keyframes close {
+    from {width: 80vw;}
+    to {width: 100vw;}
+  }
+  
+@media only screen and (min-width: 1600px) {
+  .content.close{
+	width: 100%;
+  }
+}
+  @media only screen and (min-width: 1000px) {
+  .home {
+    display: flex;
+    justify-content: space-between;
+  }
+  .content{
+	width: 100%;
+  }
+}
+  @media only screen and (max-width: 1000px) {
+  .content.close {
+    width: 100vw !important;
+  }
+}

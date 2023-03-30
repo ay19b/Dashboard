@@ -1,0 +1,203 @@
+.topbar {
+    height: 65px;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+  }
+  .topbarHidden{
+    width:100vw;
+  }
+  .app .topbar{
+    background-color: var(--bgcolor2);
+  }
+  .app.dark .topbar{
+    background-color: var(--bgcolor);
+  }
+  .app .topbarHidden{
+    width: 100vw;
+    background-color: var(--bgcolor2);
+  }
+  .app.dark .topbarHidden{
+    width: 100vw;
+    background-color: var(--bgcolor);
+  }
+  
+  .container{
+    width:95%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .leftBar{
+    display: flex;
+    align-items: center;
+    flex: 0.54 1;
+  }
+  .leftBar .input{
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  .app .leftBar .input{
+    background-color: white;
+    color: black;
+  }
+  .app.dark .leftBar .input{
+    background-color:black;
+    color: white;
+  }
+  .input:focus {
+    outline: none !important;
+    border:1px solid red;
+  }
+  .rightBar{
+    display: flex;
+    align-items: center;
+    flex: 0.4;
+	justify-content: flex-end;
+  }
+  .topbarListItem{
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    color: #6C7293;
+    position: relative;
+  }
+  .topbarListItem:hover{
+    color: var(--red);
+  }
+  .topbarListItem .circleSvg{
+	 padding: 7px;
+     background-color: black;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 50%;
+     margin-right: 8px; 
+  }
+  .topbarListItem h1{
+    font-size: 16px;
+    display: block ruby;
+    font-weight: revert;
+  }
+  .iconMenu{
+    padding: 7px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: var(--red);
+    cursor: pointer;
+	  margin-right: 8%;
+  }
+  .app .iconMenu{
+    background-color: white;
+  }
+  .app.dark .iconMenu{
+    background-color:black;
+  }
+  .iconItem{
+    font-size: 1.2rem;
+    border-radius: 50%;
+    padding: 7%;
+    margin-right: 8px;
+    width: 32px;
+  }
+  .app .circleSvg{
+    background-color: white;
+  }
+  .app.dark .circleSvg{
+    background-color:black;
+  }
+  .iconDown{
+    font-size: 2rem;
+    margin-top: 5px;
+  }
+  .listUser{
+    position: absolute;
+    background-color: #191c24;
+    list-style: none;
+    top: 60px;
+    right: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 8rem;
+    font-size: 16px;
+  }
+  .listUser li{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+  .listUser li:hover{
+    color: var(--red);
+  }
+  .listUser li svg{
+    margin-right: 4px;
+  }
+  .listUser div{
+    text-align: center;
+    background-color: #000;
+    padding: 4px;
+  }
+  @media only screen and (min-width: 1000px) {
+	.leftBar .logo{
+       display:none
+    }
+}
+ @media only screen and (max-width: 1200px) {
+   .iconMenu{
+	   margin-right: 0%;
+   }
+}
+  @media only screen and (max-width: 900px) {
+	  
+  .topbarListItem h1{
+    display:none
+   }
+   .iconMenu{
+	   margin-right: 4%;
+	   margin-left: 3%;
+   }
+}
+@media only screen and (max-width: 700px) {
+  .leftBar input {
+    display: none;
+  }
+  .topbarListItem .circleSvg{
+	  margin-right:0;
+  }
+  .iconDown {
+    font-size: 1.3rem;
+   }
+}
+
+@media only screen and (max-width:450px) {
+   
+   .rightBar {
+    justify-content: flex-end;
+   }
+  .topbarListItem {
+    font-size: 1.2rem;
+    margin-left: -6%;
+   }
+   .logo svg {
+     font-size: 2rem;
+   }
+   .iconMenu {
+      margin: 0%;
+    }
+   .MuiAvatar-root{
+	   width: 32px !important;
+       height: 32px !important;
+   }
+}
+

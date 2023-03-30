@@ -1,0 +1,45 @@
+.chart{
+    width: 46%;
+    border-radius: 8px;
+    margin-top: 28px;
+	overflow: hidden;
+}
+.app .chart{
+    background-color: var(--bgcolor2);
+}
+.app.dark .chart{
+    background-color: var(--bgcolor);
+}
+.headTable{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 92%;
+    margin: auto;
+}
+
+.app .headText{
+    color: black;
+}
+.app.dark .headText{
+    color: white;
+}
+.headBtn{
+    color: var(--red);
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1100px){
+	.charts{
+		display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+	}
+	.chart {
+      width: 94%;
+      flex: 0 0 auto;
+	  text-align: center;
+    }
+}

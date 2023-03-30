@@ -1,0 +1,13 @@
+.home{
+    display: flex;
+}
+.content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.charts{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}

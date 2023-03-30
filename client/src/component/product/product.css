@@ -1,0 +1,299 @@
+.users{
+    background-color: var(--bgcolor2);
+    margin: 28px auto auto auto;
+    width: 95%;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+.title{
+    width: 90%;
+    margin: auto;
+    font-size: 2rem;
+    color: white;
+    margin-top: 3rem;
+}
+.userList{
+    margin: 5%;
+    border: 1px solid;
+}
+.user{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.status{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.statusColor{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    display: inline-table;
+    margin-right: 8%
+}
+.icons .pen{
+    background-color: #e9f5fd;
+    color: #3fa4f4;
+    font-size: 15px;
+    padding: 4px;
+    border-radius: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.icons .trash{
+    font-size: 15px;
+    padding: 4px;
+    border-radius: 6px;
+    color: #f96f74;
+    background-color: #fde5e7;
+    cursor: pointer;
+}
+.skeleton{
+    width: 90%;
+    margin: 28px auto auto auto;
+}
+.MuiBackdrop-root.MuiDialog-backdrop{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.dialogUpdate .MuiPaper-root.MuiDialog-paper{
+    max-width: none;
+    width: 90% !important;
+}
+.dialogDelate .MuiPaper-root.MuiDialog-paper{
+    max-width: none;
+    width: 40% !important;
+}
+.dialogDelate .MuiDialogContent-root{
+    margin-top: 15px;
+}
+.dialogDelate .btnDlt{
+    background-color: #e22721;
+    color: white;
+}
+.dialogDelate .btnDlt:hover{
+    background-color: #d14743;
+}
+/*  update dialog    */
+
+.update{
+    margin: 28px auto auto auto;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-bottom: 30px;
+    /*background-color: var(--bgcolor2);*/
+}
+.app.dark .update {
+    background-color: var(--bgcolor);
+}
+.update .cancel{
+    font-size: 2rem;
+    color: black;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+.update .cancel:hover{
+    color: #912222 !important;
+}
+.update .title{
+    width: 90%;
+    margin: auto;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin-top: 1rem;
+    margin-bottom: 20px;
+}
+.form{
+    width: 90%;
+    margin: 25px auto;
+}
+.topForm{
+    display: flex;
+    justify-content: space-between;
+}
+.addImage{
+    flex: 0.3;
+}
+.imageAdded{
+    border: 2px dashed #ccc;
+    height: 14rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.imageAdded .image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.imageAdded .image .remove{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.imageAdded img{
+    width: 100%;
+    height: 100%;
+}
+.imageAdded svg{
+    font-size: 2rem;
+}
+.imageAdded input{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.app.dark .imageAdded{
+    color:rgba(255, 255, 255, 0.6) !important;
+}
+.listImage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.listImage .image{
+    height: 100%;
+    position: relative;
+}
+.listImage .image .remove{
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    cursor: pointer;
+}
+.listImage img{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #bfb1b1;
+}
+.boxUpload{
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.2rem;
+    height: 4.2rem;
+    position: relative;
+    margin-bottom: 20px;
+}
+.boxUpload svg{
+    font-size: 1.6rem;
+}
+.app.dark .boxUpload svg{
+    color: #ccc;
+}
+.boxUpload input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+.inputInf{
+    flex: 0.6;
+}
+.inputInf .name,
+.inputInf .category,
+.inputInf .price{
+    margin-bottom: 20px;
+    z-index: 0 !important;
+}
+.disc {
+    z-index: 0 !important;
+}
+.btn{
+    width: 9rem;
+    padding: 9px;
+    background-color: #eb1616;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    color: white;
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.inputInf .category{
+    width: 100%!important;
+}
+.app.dark .inputInf .name .MuiFormLabel-root.MuiInputLabel-root,
+.app.dark .inputInf .category .MuiFormLabel-root.MuiInputLabel-root,
+.app.dark .inputInf .price .MuiFormLabel-root.MuiInputLabel-root,
+.app.dark .disc .MuiFormLabel-root.MuiInputLabel-root{
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+.app.dark .inputInf .name .MuiInputBase-root.MuiOutlinedInput-root,
+.app.dark .inputInf .category .MuiInputBase-root.MuiOutlinedInput-root,
+.app.dark .inputInf .price .MuiInputBase-root.MuiOutlinedInput-root,
+.app.dark .disc .MuiInputBase-root.MuiOutlinedInput-root{
+    color: rgba(255, 255, 255, 0.87) !important;
+}
+.app.dark .inputInf .name .MuiOutlinedInput-notchedOutline,
+.app.dark .inputInf .category .MuiOutlinedInput-notchedOutline,
+.app.dark .inputInf .price .MuiOutlinedInput-notchedOutline,
+.app.dark .disc .MuiOutlinedInput-notchedOutline{
+    border-color: rgba(255, 255, 255, 0.23)!important;
+}
+.app.dark .category .MuiSvgIcon-root.MuiSelect-icon{
+    color: rgba(255, 255, 255, 0.54) !important;
+}
+.category .MuiList-root.MuiMenu-list{
+    margin: 0px auto auto auto!important;
+    width: 100%!important;
+    border-radius: 6px!important;
+    display: flex!important;
+    justify-content: space-evenly!important;
+    flex-direction: column!important;
+	background-color: white !important;
+}
+
+.app .category .MuiPaper-root{
+    background-color: var(--bgcolor2)!important;
+  }
+  .app.dark .category .MuiPaper-root{
+    background-color: var(--bgcolor)!important;
+  }
+  
+.MuiTypography-root.MuiDialogTitle-root{
+    display: none !important;
+}
+.btnAdd{
+    width: 9rem;
+    padding: 9px;
+    background-color: #eb1616;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+.btnAdd:hover{
+    background-color: #d63a3a;
+}
+@media only screen and (max-width: 700px) {
+    .imageAdded{
+        height: 20rem;
+    }
+    .topForm {
+        display: flex;
+        flex-direction: column;
+    }
+}

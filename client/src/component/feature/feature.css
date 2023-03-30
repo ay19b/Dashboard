@@ -1,0 +1,64 @@
+.list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    display: flex;
+    align-items: center;
+    background-color: #191c24;
+    flex: 0.22;
+    height: 6.5rem;
+    border-radius: 8px;
+    margin-top: 28px;
+    justify-content: space-around;
+}
+.app .card{
+    background-color: var(--bgcolor2);
+}
+.app.dark .card{
+    background-color: var(--bgcolor) ;
+}
+.card svg{
+    font-size: 4rem;
+    color: var(--red);
+}
+.card .cardInf{
+    font-size: 1.3rem;
+	text-align: end;
+}
+.app.dark .card .cardInf{
+    color: rgb(255, 255, 255);
+}
+.app .card .cardInf{
+    color: black;
+}
+.card .cardInf h5{
+    color: #6c7293;
+}
+.card .cardInf h6{
+    margin-top: -12px;
+    font-size: 1rem;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+  .list {
+    display: flex;
+	flex-wrap: wrap;
+  }
+  .card {
+	width: 47%;
+    flex: 0 0 auto;
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+	.card {
+      width: 90%;
+      flex: 0 0 auto;
+    }
+
+}
