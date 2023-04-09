@@ -14,7 +14,7 @@ import './product.css'
 
 export default function UpdateDialog({open,handleClose,id}) {
   const [name, setName] = useState('');
-  const api = "http://localhost:3001";
+  const api = "https://dashboard-api-v8p2.onrender.com"; 
 
 
   function delate(){
