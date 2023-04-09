@@ -9,7 +9,7 @@ import axios from "axios"
 
 
 export default function DelateDialog({open,handleClose,id}) {
-  const api = "http://localhost:3001";
+  const api = "https://dashboard-api-v8p2.onrender.com"; 
 
 
 
