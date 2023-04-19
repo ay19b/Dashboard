@@ -21,7 +21,7 @@ export default function Product() {
   const [prod, setProd] = useState([]);
   const [loading, setLoading] = useState(true);
   const [id, setId] = useState("");
-  const api = "https://dashboard-api-v8p2.onrender.com"; 
+  const api = "https://control-panel-ua7l.vercel.app"; 
   const [delate, setDelate] = useState(false);
   const [open,setOpen] = useState(false);
 
