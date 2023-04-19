@@ -37,7 +37,7 @@ export default function Update({handleClose,id}) {
     const [errorPrice, setErrorPrice] = useState(false);
     const [errorStock, setErrorStock] = useState(false);
     const [errorCatg, setErrorCatg] = useState(false);
-    const api = "https://dashboard-api-v8p2.onrender.com";
+    const api = "https://control-panel-ua7l.vercel.app";
     const navigate = useNavigate();
 
     const handleChangeTypes = (event) => {
