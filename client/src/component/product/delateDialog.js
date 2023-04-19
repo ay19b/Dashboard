@@ -9,7 +9,7 @@ import axios from "axios"
 
 
 export default function DelateDialog({open,handleClose,id}) {
-  const api = "https://dashboard-api-v8p2.onrender.com"; 
+  const api = "https://control-panel-ua7l.vercel.app";
 
 
 
