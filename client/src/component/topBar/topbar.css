@@ -87,6 +87,7 @@
     font-size: 16px;
     display: block ruby;
     font-weight: revert;
+    width: 100%;  
   }
   .iconMenu{
     padding: 7px;
