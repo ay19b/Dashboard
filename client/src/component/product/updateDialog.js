@@ -14,7 +14,7 @@ import './product.css'
 
 export default function UpdateDialog({open,handleClose,id}) {
   const [name, setName] = useState('');
-  const api = "https://control-panel-ua7l.vercel.app";
+  const api = "https://dashboard-api-v8p2.onrender.com";
 
 
   function delate(){
