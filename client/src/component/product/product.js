@@ -24,7 +24,12 @@ export default function Product() {
   const api = "https://dashboard-api-v8p2.onrender.com"; 
   const [delate, setDelate] = useState(false);
   const [open,setOpen] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState('');
 
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+  };
+  
   const handleClickDelate = (i) => {
     setDelate(true);
     setId(i)
@@ -59,8 +64,31 @@ export default function Product() {
 
 
   return (
-    <div className='users'>
+    <div className='products'>
     <h3 className='title'>Products</h3>
+    {!loading?
+    <div className='filterProd'>
+      <h3>Filters :</h3> 
+      <button 
+           className={`btnFilter ${selectedCategory === '' ? 'active' : ''}`} 
+           onClick={() => handleCategoryChange('')}>All</button>
+      <button 
+           className={`btnFilter ${selectedCategory === 'Supermarché' ? 'active' : ''}`}
+           onClick={() => handleCategoryChange('Supermarché')}>Supermarché</button>
+      <button 
+           className={`btnFilter ${selectedCategory === 'Mode' ? 'active' : ''}`}
+           onClick={() => handleCategoryChange('Mode')}>Mode</button>
+      <button 
+           className={`btnFilter ${selectedCategory === 'Informatique' ? 'active' : ''}`}
+           onClick={() => handleCategoryChange('Informatique')}>Informatique</button>
+      <button 
+           className={`btnFilter ${selectedCategory === 'Électroménager, TV & Audio' ? 'active' : ''}`} 
+           onClick={() => handleCategoryChange('Électroménager, TV & Audio')}>Électroménager, TV & Audio</button>
+      <button 
+           className={`btnFilter ${selectedCategory === 'Articles de sport' ? 'active' : ''}`}
+           onClick={() => handleCategoryChange('Articles de sport')}>Articles de sport</button>
+    </div>: <div className='filterProd'><Skeleton animation="wave" /></div>}
+    
     {!loading? 
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
