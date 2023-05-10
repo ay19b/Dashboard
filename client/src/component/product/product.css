@@ -311,6 +311,22 @@
 .app.dark .category .MuiSvgIcon-root.MuiSelect-icon{
     color: rgba(255, 255, 255, 0.54) !important;
 }
+.app .MuiTableBody-root .MuiTableCell-root,
+.app .MuiTableBody-root .MuiTableCell-root{
+  color:var(--text) !important;
+  border-bottom: 1px solid #ccc !important;
+  font-size: 1rem !important;
+  max-width: 14rem;
+  width: 7rem;
+}
+.app.dark .MuiTableBody-root .MuiTableCell-root,
+.app.dark .MuiTableBody-root .MuiTableCell-root{
+  color:var(--text) !important;
+  border-bottom: 1px solid rgb(0, 0, 0) !important;
+  font-size: 1rem !important;
+  max-width: 14rem;
+  width: 7rem;
+}
 .category .MuiList-root.MuiMenu-list{
     margin: 0px auto auto auto!important;
     width: 100%!important;
