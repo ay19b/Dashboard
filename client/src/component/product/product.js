@@ -104,7 +104,9 @@ export default function Product() {
         </TableHead>
         {prod.length>0?
         <TableBody>
-          {prod.map((row) => (
+          {prod
+          .filter((row) => selectedCategory === '' || row.category === selectedCategory)
+          .map((row) => (
             <>
             <TableRow
               key={row._id}
@@ -118,7 +120,7 @@ export default function Product() {
                  <p>Image not found</p>
                 )}
               </TableCell>
-              <TableCell>{row.name}</TableCell>
+              <TableCell><span className='prod'>{row.name}</span></TableCell>
               <TableCell >{row.category}</TableCell>
               <TableCell >{row.price}DA</TableCell>
               <TableCell >{row.stock}</TableCell>
