@@ -1,19 +1,23 @@
-import React from 'react'
-import ChartArea from '../../component/charts/areaChart'
-import ChartBar from '../../component/charts/barChart'
-import Feature from '../../component/feature/feature'
+import React,{useEffect} from 'react'
+import {useLocation } from 'react-router-dom';
 import Footer from '../../component/footer/footer'
 import Sidebar from '../../component/sidebar/sidebar'
-import DataTable from '../../component/table/table'
-import Topbar from '../../component/topBar/topbar'
 import User from '../../component/user/user'
 import { useContext } from "react";
-import { DarkModeContext } from "../../context/darkModeContext";
 import {MenuContext} from '../../context/menuContext'
 import ScrollToTop from '../../component/scroll/scroll';
+import Topbar from '../../component/topBar/topbar';
 
 export default function Users() {
 	 const { menu } = useContext(MenuContext);
+   const location = useLocation();
+
+
+     // scroll page to top 
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [location]);
+
   return (
     <div className='home'>
       <Sidebar />

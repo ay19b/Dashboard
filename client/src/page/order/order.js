@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import {useLocation } from 'react-router-dom';
 import ChartArea from '../../component/charts/areaChart'
 import ChartBar from '../../component/charts/barChart'
 import Feature from '../../component/feature/feature'
@@ -15,8 +16,14 @@ import ScrollToTop from '../../component/scroll/scroll';
 
 export default function Orders() {
 	 const { menu } = useContext(MenuContext);
-	 
-	 
+	 const location = useLocation();
+
+	// scroll page to top 
+   useEffect(() => {
+        window.scrollTo(0,0);
+  }, [location]);
+
+
   return (
     <div className='home'>
       <Sidebar />

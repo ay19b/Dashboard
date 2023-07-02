@@ -10,7 +10,7 @@ import './user.css'
 import Data from './data'
 import Avatar from '@mui/material/Avatar';
 import admin from '../../images/admin.webp'
-import { makeStyles} from '@mui/styles'
+
 
 
 export default function User() {
