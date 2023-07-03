@@ -8,10 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import './user.css'
 import Data from './data'
-import Avatar from '@mui/material/Avatar';
-import admin from '../../images/admin.webp'
-
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function User() {
 
@@ -19,15 +16,15 @@ export default function User() {
   <div className='users'>
     <h3 className='title'>Users</h3>
     <TableContainer component={Paper} className='users'>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table sx={{ minWidth: 850 }} aria-label="simple table">
         <TableHead>
           <TableRow>
             <TableCell>Name</TableCell>
-            <TableCell align="right">Status</TableCell>
-            <TableCell align="right">Weeks</TableCell>
-            <TableCell align="right">Location</TableCell>
-            <TableCell align="right">Budget</TableCell>
-            <TableCell align="right">CustomerID</TableCell>
+            <TableCell align="left">Status</TableCell>
+            <TableCell align="left">Weeks</TableCell>
+            <TableCell align="left">Location</TableCell>
+            <TableCell align="left">Budget</TableCell>
+            <TableCell align="left">CustomerID</TableCell>         
           </TableRow>
         </TableHead>
         <TableBody>
@@ -38,20 +35,19 @@ export default function User() {
             >
               <TableCell component="th" scope="row" >
                 <div className="user">
-                   <Avatar src={row.CustomerImage} style={{marginRight:'10px'}}/>{row.CustomerName}
+                   <LazyLoadImage src={row.CustomerImage} className='imageAvatar'/>{row.CustomerName}
                 </div>
               </TableCell>
-              <TableCell align="right">
+              <TableCell align="left">
                 <div className='status'>
                   <div className='statusColor' style={{backgroundColor:row.StatusBg,}}></div>
                   {row.Status}
                 </div>
-                
-                </TableCell>
-              <TableCell align="right">{row.Weeks}</TableCell>
-              <TableCell align="right">{row.Location}</TableCell>
-              <TableCell align="right">{row.Budget}</TableCell>
-              <TableCell align="right">{row.CustomerID}</TableCell>
+              </TableCell>
+              <TableCell align="left">{row.Weeks}</TableCell>
+              <TableCell align="left">{row.Location}</TableCell>
+              <TableCell align="left">{row.Budget}</TableCell>
+              <TableCell align="left">{row.CustomerID}</TableCell>
             </TableRow>
           ))}
         </TableBody>

@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    padding-bottom: 25px;
 }
 .title{
     width: 90%;
@@ -23,9 +24,14 @@
     justify-content: flex-start;
     align-items: center;
 }
-.status{
+.user .imageAvatar{
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 3rem;
+}
+.users .status{
     display: flex;
-    justify-content: right;
+    justify-content: flex-start;
     align-items: center;
 }
 .statusColor{

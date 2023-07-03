@@ -6,6 +6,7 @@
   .sidebar.open {
     margin-left: 0;
 	  transition: margin-left 0.35s;
+    width: 22vw !important;
   }
   .sidebar.close {
     margin-left: -280px;
@@ -124,12 +125,12 @@
   }
   
   
-  
- @media only screen and (min-width: 1600px){
-   .sidebar {
-     width: 22rem;
-    }
+@media only screen and (max-width: 1200px) {
+.sidebar.open {
+  width: 25vw !important;
 }
+}
+
   @media only screen and (min-width: 1000px) {
    .sidebar {
     width: 19rem;

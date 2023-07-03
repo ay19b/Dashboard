@@ -13,7 +13,7 @@ export default function Users() {
    const location = useLocation();
 
 
-     // scroll page to top 
+  // scroll page to top 
   useEffect(() => {
     window.scrollTo(0,0);
   }, [location]);
