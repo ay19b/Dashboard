@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React,{useState} from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -8,9 +8,20 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import './user.css'
 import Data from './data'
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Skeleton from '@mui/material/Skeleton';
+
 
 export default function User() {
+  const [data, setData] = useState(Data);
+
+
+  const handleImageLoad = (itemId) => {
+    setData((prevData) =>
+      prevData.map((item) =>
+        item.CustomerID === itemId ? { ...item, loading: true } : item
+      )
+    );
+  };
 
   return (
   <div className='users'>
@@ -28,14 +39,21 @@ export default function User() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {Data.map((row) => (
+          {data.map((row) => (
             <TableRow
               key={row.Name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row" >
                 <div className="user">
-                   <LazyLoadImage src={row.CustomerImage} className='imageAvatar'/>{row.CustomerName}
+                  {!row.loading && <Skeleton variant="rectangular" className='imageAvatar' />}
+                  <img
+                    src={row.CustomerImage}
+                    alt=''
+                    className='imageAvatar'
+                    onLoad={() => handleImageLoad(row.CustomerID)}
+                    style={{ display: row.loading ? "block" : "none" }}
+                  />{row.CustomerName}
                 </div>
               </TableCell>
               <TableCell align="left">

@@ -25,9 +25,10 @@
     align-items: center;
 }
 .user .imageAvatar{
-    margin-right: 10px;
-    border-radius: 50%;
-    width: 3rem;
+    margin-right: 10px !important;
+    border-radius: 50% !important;
+    width: 3rem !important;
+    height: 3rem !important;
 }
 .users .status{
     display: flex;

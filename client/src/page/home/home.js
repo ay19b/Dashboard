@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import {useLocation } from 'react-router-dom';
 import ChartArea from '../../component/charts/areaChart'
 import ChartBar from '../../component/charts/barChart'
 import Feature from '../../component/feature/feature'
@@ -8,7 +9,6 @@ import DataTable from '../../component/table/table'
 import Topbar from '../../component/topBar/topbar'
 import './home.css'
 import { useContext } from "react";
-import { DarkModeContext } from "../../context/darkModeContext";
 import {MenuContext} from '../../context/menuContext'
 import ScrollToTop from '../../component/scroll/scroll';
 
@@ -16,6 +16,13 @@ import ScrollToTop from '../../component/scroll/scroll';
 
 export default function Home() {
   const { menu } = useContext(MenuContext);
+  const location = useLocation();
+
+
+  // scroll page to top 
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, [location]);
 
   return (
     <div className='home' >
